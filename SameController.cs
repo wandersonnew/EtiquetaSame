@@ -10,7 +10,7 @@ namespace EtiquetaSame
         public List<string> dados = new List<string>();
         public DataTable BuscarDados(string matricula)
         {
-            string oradb = "Data Source=ip-do-servidor:porta/orcl;User Id=usuario;Password=senha;";
+            string oradb = "Data Source=10.10.10.250:1521/orcl;User Id=sistema;Password=sistema;";
 
             using (OracleConnection conn = new OracleConnection(oradb))
             {
